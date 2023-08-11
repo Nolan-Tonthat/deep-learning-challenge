@@ -1,12 +1,12 @@
 # Deep-Learning-Challenge
-##Neural Network Model for Alphabet Soup: Predicting Success of Applicants After Hypothetical Funding
+## Neural Network Model for Alphabet Soup: Predicting Success of Applicants After Hypothetical Funding
 
-##Overview
+## Overview
 
 This neural network model was created to help the nonprofit foundation Alphabet Soup select applicants for funding with the best chance of success in their ventures.
 By using the end accuracy score of the model, we can determine whether or not the model can accurately predict if an organization is successful.
 
-##Data Preprocessing
+## Data Preprocessing
 From preprocessing the CSV provided by Alphabet Soup, the following information emerged:
 * Target variable is the column `"IS_SUCCESSFUL"`
   * data inside the column is binary (0 or 1) which can be referred to as yes or no
@@ -14,7 +14,7 @@ From preprocessing the CSV provided by Alphabet Soup, the following information 
   * "EIN" and "NAME" are not target/feature columns so they do not provide anything towards the NN model.  Therefore, they are removed to prevent any confusion
 * Feature variables are the remaining columns: `"APPLICATION_TYPE"`	`"AFFILIATION"`	`"CLASSIFICATION"`	`"USE_CASE"`	`"ORGANIZATION"`	`"STATUS"`	`"INCOME_AMT"`	`"SPECIAL_CONSIDERATIONS"`	`"ASK_AMT "` 
 
-##Model Results
+## Model Results
 
 ### Model 1: 3 Layers, 44 inputs
 #### Accuracy: 0.730, Loss: 0.559
