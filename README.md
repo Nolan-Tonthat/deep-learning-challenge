@@ -46,3 +46,21 @@ From preprocessing the CSV provided by Alphabet Soup, the following information 
 | Fourth | 21 | relu  |
 | Fifth | 7 | relu  |
 | Output | 1 | sigmoid  |
+
+## Summary
+The results from the models shown above does not meet the requirement of an optimization above 75% accuracy.
+The following steps were taken in order to try and achieve that requirement:
+* increasing and decreasing number of inputs
+* increasing and decreasing number of layers
+* increasing and decreasing number of neurons per layer
+* changing the activation type of the layers
+* reducing epochs to the training regimen
+
+ All models, including the ones shown, did not increase their accuracy above ~73% accuracy.  This could be due to the dataset needing further cleaning or conversion. 
+ Another possible theory is that a satisfactory combination could not be achieved to meet the 75% accuracy requirement.  Perhaps using an auto-optimizer would yield better results.  
+ However, there is a noticeable trend that the auto-optimizer prefers to use the "tanh" activation which could limit its capabilities.  
+
+ ##Suggestion and Future Models
+ If Alphabet Soup is satisfied with the 73% accuracy, it is recommended to use any of the models listed above.  However, to achieve abouve 75% accuracy, a larger-scale model could be used (more layers, neurons, and epochs).
+ More time could also be spent researching on whether or not increasing neurons between hidden layers instead of lowering them yields better results.  A majority of the layers within the models listed above used the "relu" activation type.
+ More experimentation on variation of activation types could yield a promising combination that could achieve a satisfactory accuracy score.
